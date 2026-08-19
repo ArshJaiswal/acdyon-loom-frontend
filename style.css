@@ -1,79 +1,79 @@
 /* ==========================================================================
-   LOOM — REFINED EDITORIAL DESIGN SYSTEM
-   Acdyon Technologies Frontend Challenge Track 2: The Premium Home Page
+   LOOM — EVERLANE-INSPIRED MINIMALIST DESIGN SYSTEM
+   Modern, crisp, high-contrast editorial typography and razor-sharp geometry
    ========================================================================== */
 
 :root {
-  /* Light Mode Palette: Off-White, Warm Sand & Deep Obsidian */
-  --bg-primary: #fdfbf7;
-  --bg-secondary: #f6f2ea;
-  --bg-tertiary: #ede7dc;
+  /* Everlane Light Palette: Pure White, Soft Neutral Grey & Deep Jet Black */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f7f7;
+  --bg-tertiary: #eeeeee;
   --bg-surface: #ffffff;
 
-  --text-main: #111111;
-  --text-muted: #66635e;
-  --text-light: #9e9a93;
+  --text-main: #000000;
+  --text-muted: #555555;
+  --text-light: #888888;
   --text-inverse: #ffffff;
 
-  --border-subtle: #e8e3d8;
-  --border-dark: #111111;
+  --border-subtle: #e5e5e5;
+  --border-dark: #000000;
 
-  --accent-terracotta: #c47c5d;
+  --accent-terracotta: #8c5847;
 
   /* Typography */
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* Layout & Spacing */
-  --container-max: 1200px;
-  --header-height: 72px;
-  --radius-xs: 2px;
-  --radius-sm: 4px;
-  --radius-md: 8px;
+  /* Layout & Geometry (Everlane Crisp Rectangular Silhouette) */
+  --container-max: 1240px;
+  --header-height: 70px;
+  --radius-xs: 0px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
   --radius-full: 9999px;
 
-  /* Shadows & Motion Restraint */
-  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
-  --shadow-card-hover: 0 10px 30px rgba(0, 0, 0, 0.06);
-  --transition-smooth: 300ms cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  /* Restrained Shadows & Motion */
+  --shadow-subtle: 0 2px 10px rgba(0, 0, 0, 0.03);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --transition-smooth: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 150ms ease;
 }
 
 /* ==========================================================================
-   REAL DARK MODE (ALL-OR-NOTHING COMPLETE PALETTE)
+   REAL DARK MODE (ALL-OR-NOTHING EVERLANE NOIR)
    ========================================================================== */
 
 body.dark {
-  --bg-primary: #0e0e10;
-  --bg-secondary: #161618;
-  --bg-tertiary: #1f1f23;
-  --bg-surface: #18181b;
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1f1f1f;
+  --bg-surface: #111111;
 
-  --text-main: #f5f2ea;
-  --text-muted: #a39e93;
-  --text-light: #6e6a62;
-  --text-inverse: #0e0e10;
+  --text-main: #ffffff;
+  --text-muted: #999999;
+  --text-light: #666666;
+  --text-inverse: #000000;
 
-  --border-subtle: #27272a;
-  --border-dark: #f5f2ea;
+  --border-subtle: #242424;
+  --border-dark: #ffffff;
 
   --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.4);
   --shadow-card-hover: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 body.dark .announcement-bar {
-  background-color: #080809;
-  color: #e5e2da;
+  background-color: #000000;
+  color: #e5e5e5;
   border-bottom: 1px solid var(--border-subtle);
 }
 
 body.dark .site-header {
-  background: rgba(14, 14, 16, 0.94);
+  background: rgba(10, 10, 10, 0.95);
 }
 
 body.dark .hero-image-tag {
-  background: rgba(24, 24, 27, 0.92);
+  background: rgba(17, 17, 17, 0.92);
   border: 1px solid var(--border-subtle);
 }
 
@@ -86,37 +86,37 @@ body.dark .standard-card {
 }
 
 body.dark .cta-box {
-  background-color: #18181b;
+  background-color: #141414;
   border: 1px solid var(--border-subtle);
 }
 
 body.dark .cta-btn {
-  background-color: #f5f2ea;
-  color: #0e0e10;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 body.dark .cart-drawer, body.dark .search-box {
-  background: #141416;
+  background: #111111;
 }
 
 body.dark .nav-bag-btn {
-  background-color: #f5f2ea;
-  color: #0e0e10;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 body.dark .hero-cta-btn {
-  background-color: #f5f2ea;
-  color: #0e0e10;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 body.dark .filter-tab.active {
-  background-color: #f5f2ea;
-  color: #0e0e10;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 body.dark .checkout-btn {
-  background-color: #f5f2ea;
-  color: #0e0e10;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Sun / Moon Icon Toggling */
@@ -197,20 +197,22 @@ kbd {
   width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
 /* ==========================================================================
-   ANNOUNCEMENT BAR & NAVIGATION
+   ANNOUNCEMENT BAR & NAVIGATION (EVERLANE CLEANLINE)
    ========================================================================== */
 
 .announcement-bar {
-  background-color: #111111;
-  color: #fdfbf7;
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  padding: 8px 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 9px 0;
   text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .announcement-inner span {
@@ -222,9 +224,9 @@ kbd {
   top: 0;
   z-index: 100;
   height: var(--header-height);
-  background: rgba(253, 251, 247, 0.94);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
@@ -239,14 +241,15 @@ kbd {
 .nav-links-left {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.25rem;
   flex: 1;
 }
 
 .nav-link {
-  font-size: 0.86rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--text-main);
   position: relative;
   padding: 4px 0;
@@ -254,7 +257,7 @@ kbd {
 }
 
 .nav-link:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .brand-logo {
@@ -263,10 +266,10 @@ kbd {
 }
 
 .logo-text {
-  font-family: var(--font-serif);
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-family: var(--font-sans);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
   color: var(--text-main);
   text-transform: uppercase;
 }
@@ -289,35 +292,33 @@ kbd {
 }
 
 .nav-btn:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
-
-
 
 .nav-bag-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 8px 14px;
-  background-color: #111111;
-  color: #fff;
-  border-radius: var(--radius-full);
-  font-size: 0.82rem;
+  padding: 8px 16px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: var(--radius-xs);
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
 .nav-bag-btn:hover {
-  background-color: #262626;
-  transform: translateY(-1px);
+  opacity: 0.85;
 }
 
 .bag-count {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
   padding: 1px 6px;
-  border-radius: var(--radius-full);
-  font-size: 0.72rem;
+  border-radius: 2px;
+  font-size: 0.7rem;
 }
 
 /* Mobile Hamburger */
@@ -335,7 +336,7 @@ kbd {
   height: 2px;
   width: 100%;
   background-color: var(--text-main);
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 /* Mobile Drawer */
@@ -363,8 +364,11 @@ kbd {
 }
 
 .mobile-nav-link {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: var(--text-main);
 }
 
@@ -376,28 +380,31 @@ kbd {
 .mobile-bag-btn {
   width: 100%;
   padding: 12px;
-  background: #111111;
+  background: #000000;
   color: #fff;
-  border-radius: var(--radius-sm);
-  font-size: 0.88rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.82rem;
   font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   text-align: center;
 }
 
 /* ==========================================================================
-   1. HERO SECTION
+   1. HERO SECTION (EVERLANE MODERN MINIMAL)
    ========================================================================== */
 
 .hero-section {
   padding: 4.5rem 0 5.5rem;
   background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
+  grid-template-columns: 1fr 1.2fr;
   align-items: center;
-  gap: 4rem;
+  gap: 4.5rem;
 }
 
 .hero-content {
@@ -416,7 +423,7 @@ kbd {
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(3.2rem, 5.5vw, 4.8rem);
+  font-size: clamp(3.2rem, 5.5vw, 4.6rem);
   line-height: 1.05;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -430,7 +437,7 @@ kbd {
 }
 
 .hero-description {
-  font-size: 1.08rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.65;
   max-width: 440px;
@@ -444,30 +451,30 @@ kbd {
 .hero-cta-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 14px 28px;
-  background-color: #111111;
-  color: #fff;
-  border-radius: var(--radius-full);
-  font-size: 0.92rem;
+  gap: 0.6rem;
+  padding: 15px 32px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: var(--radius-xs);
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
 .hero-cta-btn:hover {
-  background-color: #2b2b2b;
-  transform: translateY(-1px);
+  opacity: 0.85;
 }
 
 .hero-meta {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  font-size: 0.78rem;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
   color: var(--text-light);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -481,11 +488,11 @@ kbd {
 
 .hero-image-wrapper {
   position: relative;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xs);
   overflow: hidden;
   aspect-ratio: 4/5;
   background-color: var(--bg-secondary);
-  box-shadow: var(--shadow-subtle);
+  border: 1px solid var(--border-subtle);
 }
 
 .hero-img {
@@ -496,7 +503,7 @@ kbd {
 }
 
 .hero-image-wrapper:hover .hero-img {
-  transform: scale(1.02);
+  transform: scale(1.015);
 }
 
 .hero-image-tag {
@@ -504,14 +511,14 @@ kbd {
   bottom: 16px;
   left: 16px;
   right: 16px;
-  background: rgba(253, 251, 247, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(8px);
   padding: 0.85rem 1.15rem;
   border-radius: var(--radius-xs);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .tag-title {
@@ -521,13 +528,14 @@ kbd {
 }
 
 .tag-price {
-  font-family: var(--font-serif);
-  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 500;
   color: var(--text-muted);
 }
 
 /* ==========================================================================
-   2. FEATURED COLLECTION (PRODUCT SHOWCASE)
+   2. FEATURED COLLECTION (EVERLANE PRODUCT SHOWCASE)
    ========================================================================== */
 
 .featured-section {
@@ -548,7 +556,7 @@ kbd {
   display: block;
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--text-muted);
   margin-bottom: 0.4rem;
@@ -564,29 +572,37 @@ kbd {
 
 .category-filter-group {
   display: flex;
-  gap: 0.4rem;
+  gap: 0;
   background: var(--bg-primary);
-  padding: 3px;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-xs);
   border: 1px solid var(--border-subtle);
+  overflow: hidden;
 }
 
 .filter-tab {
-  padding: 7px 16px;
-  border-radius: var(--radius-full);
-  font-size: 0.82rem;
-  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--text-muted);
   transition: all var(--transition-fast);
+  border-right: 1px solid var(--border-subtle);
+}
+
+.filter-tab:last-child {
+  border-right: none;
 }
 
 .filter-tab:hover {
   color: var(--text-main);
+  background-color: var(--bg-secondary);
 }
 
 .filter-tab.active {
-  background-color: #111111;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Products Grid */
@@ -596,7 +612,7 @@ kbd {
   gap: 2rem;
 }
 
-/* Individual Product Card (Matching Exact Layout) */
+/* Individual Product Card (Everlane Crisp Box) */
 .product-card {
   background: #ffffff;
   border-radius: var(--radius-xs);
@@ -604,18 +620,17 @@ kbd {
   border: 1px solid var(--border-subtle);
   display: flex;
   flex-direction: column;
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  transition: box-shadow var(--transition-smooth);
 }
 
 .product-card:hover {
-  transform: translateY(-4px);
   box-shadow: var(--shadow-card-hover);
 }
 
 .product-media-box {
   position: relative;
   aspect-ratio: 3/4;
-  background-color: #f0ebe1;
+  background-color: #f5f5f5;
   overflow: hidden;
 }
 
@@ -623,7 +638,7 @@ kbd {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 300ms ease, transform 400ms ease;
+  transition: opacity 250ms ease;
 }
 
 .product-hover-img {
@@ -633,21 +648,21 @@ kbd {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 300ms ease;
+  transition: opacity 250ms ease;
 }
 
 .product-card:hover .product-hover-img {
   opacity: 1;
 }
 
-/* Hover Quick Add Action */
+/* Everlane Hover Quick Add Bar */
 .product-hover-action {
   position: absolute;
-  bottom: 12px;
-  left: 12px;
-  right: 12px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   opacity: 0;
-  transform: translateY(6px);
+  transform: translateY(100%);
   transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -658,14 +673,14 @@ kbd {
 
 .quick-add-btn {
   width: 100%;
-  padding: 9px;
-  background-color: rgba(17, 17, 17, 0.92);
-  backdrop-filter: blur(6px);
-  color: #fff;
-  border-radius: var(--radius-xs);
-  font-size: 0.78rem;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.92);
+  color: #ffffff;
+  border-radius: 0;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   transition: background-color var(--transition-fast);
 }
 
@@ -680,6 +695,7 @@ kbd {
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
+  background-color: var(--bg-surface);
 }
 
 .product-name-block {
@@ -687,10 +703,11 @@ kbd {
 }
 
 .product-title {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 600;
+  letter-spacing: 0.01em;
   color: var(--text-main);
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .product-fabric-line {
@@ -706,14 +723,14 @@ kbd {
 }
 
 .product-price {
-  font-family: var(--font-serif);
-  font-size: 1.18rem;
+  font-family: var(--font-sans);
+  font-size: 0.98rem;
   font-weight: 600;
   color: var(--text-main);
 }
 
 .product-color-name {
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   color: var(--text-muted);
 }
 
@@ -725,8 +742,8 @@ kbd {
 }
 
 .swatch-dot {
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -738,17 +755,19 @@ kbd {
 }
 
 .swatch-dot.active {
-  outline: 2px solid #111111;
+  outline: 1.5px solid var(--text-main);
   outline-offset: 2px;
 }
 
 /* ==========================================================================
-   3. THE LOOM EDIT (LOOKBOOK)
+   3. THE LOOM EDIT (EVERLANE LOOKBOOK)
    ========================================================================== */
 
 .lookbook-section {
   padding: 6rem 0;
   background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .lookbook-header {
@@ -780,6 +799,7 @@ kbd {
   border-radius: var(--radius-xs);
   overflow: hidden;
   background-color: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
 }
 
 .lookbook-img-frame img {
@@ -790,25 +810,27 @@ kbd {
 }
 
 .lookbook-item:hover .lookbook-img-frame img {
-  transform: scale(1.02);
+  transform: scale(1.015);
 }
 
 .lookbook-meta-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 2rem;
-  color: #fff;
+  color: #ffffff;
 }
 
 .look-badge {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  color: #fde68a;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.85;
   margin-bottom: 0.35rem;
 }
 
@@ -825,13 +847,12 @@ kbd {
 }
 
 /* ==========================================================================
-   4. THE LOOM STANDARD (PHILOSOPHY)
+   4. THE LOOM STANDARD (EVERLANE TRANSPARENCY PHILOSOPHY)
    ========================================================================== */
 
 .standard-section {
   padding: 6rem 0;
   background-color: var(--bg-secondary);
-  border-top: 1px solid var(--border-subtle);
 }
 
 .standard-header {
@@ -854,10 +875,11 @@ kbd {
 }
 
 .standard-num {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--accent-terracotta);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-main);
   margin-bottom: 1.25rem;
 }
 
@@ -870,35 +892,37 @@ kbd {
 }
 
 .standard-text {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.65;
 }
 
 /* ==========================================================================
-   5. FINAL CALL TO ACTION
+   5. FINAL CALL TO ACTION (EVERLANE CLEAN CONTRAST)
    ========================================================================== */
 
 .cta-section {
   padding: 6rem 0;
   background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-subtle);
 }
 
 .cta-box {
-  background-color: #111111;
-  color: #fdfbf7;
-  border-radius: var(--radius-sm);
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: var(--radius-xs);
   padding: 4.5rem 2rem;
   text-align: center;
-  max-width: 860px;
+  max-width: 880px;
   margin: 0 auto;
 }
 
 .cta-tag {
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.15em;
-  color: #fde68a;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
   display: block;
   margin-bottom: 1rem;
 }
@@ -912,8 +936,8 @@ kbd {
 }
 
 .cta-text {
-  font-size: 1rem;
-  color: #b0ada6;
+  font-size: 0.98rem;
+  color: #cccccc;
   max-width: 460px;
   margin: 0 auto 2.5rem;
 }
@@ -921,18 +945,20 @@ kbd {
 .cta-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 14px 32px;
-  background-color: #fdfbf7;
-  color: #111111;
-  border-radius: var(--radius-full);
-  font-size: 0.92rem;
+  gap: 0.6rem;
+  padding: 15px 34px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: var(--radius-xs);
+  font-size: 0.82rem;
   font-weight: 600;
-  transition: background-color var(--transition-fast);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: opacity var(--transition-fast);
 }
 
 .cta-btn:hover {
-  background-color: #ede7dc;
+  opacity: 0.9;
 }
 
 /* ==========================================================================
@@ -952,16 +978,16 @@ kbd {
 }
 
 .footer-logo {
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
   display: block;
   margin-bottom: 0.75rem;
 }
 
 .footer-desc {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: var(--text-muted);
   max-width: 320px;
   line-height: 1.6;
@@ -974,7 +1000,7 @@ kbd {
 }
 
 .footer-col-title {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -989,7 +1015,7 @@ kbd {
 }
 
 .footer-links a {
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   color: var(--text-muted);
   transition: color var(--transition-fast);
 }
@@ -1006,8 +1032,8 @@ kbd {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
   z-index: 1000;
   justify-content: flex-end;
 }
@@ -1040,13 +1066,14 @@ kbd {
 }
 
 .cart-heading {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .cart-subcount {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   margin-left: 4px;
 }
@@ -1076,7 +1103,7 @@ kbd {
 .cart-item-img {
   width: 68px;
   height: 90px;
-  border-radius: var(--radius-xs);
+  border-radius: 0;
   object-fit: cover;
   background-color: #f0ebe1;
 }
@@ -1099,8 +1126,8 @@ kbd {
 }
 
 .cart-item-price {
-  font-family: var(--font-serif);
-  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
   font-weight: 600;
 }
 
@@ -1114,7 +1141,7 @@ kbd {
   width: 22px;
   height: 22px;
   border: 1px solid var(--border-subtle);
-  border-radius: 2px;
+  border-radius: 0;
   font-size: 0.8rem;
   display: flex;
   align-items: center;
@@ -1144,7 +1171,7 @@ kbd {
 }
 
 .cart-summary-row.total {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-main);
   padding-top: 0.5rem;
@@ -1153,12 +1180,14 @@ kbd {
 
 .checkout-btn {
   width: 100%;
-  padding: 13px;
-  background-color: #111111;
-  color: #fff;
-  border-radius: var(--radius-sm);
-  font-size: 0.88rem;
+  padding: 14px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: var(--radius-xs);
+  font-size: 0.82rem;
   font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   margin-top: 0.5rem;
 }
 
@@ -1170,8 +1199,8 @@ kbd {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
   z-index: 1000;
   align-items: flex-start;
   justify-content: center;
@@ -1186,9 +1215,10 @@ kbd {
   width: 100%;
   max-width: 520px;
   background: #ffffff;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xs);
   box-shadow: var(--shadow-card-hover);
   overflow: hidden;
+  border: 1px solid var(--border-subtle);
 }
 
 .search-bar {
@@ -1202,7 +1232,7 @@ kbd {
 
 .search-bar input {
   flex: 1;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text-main);
 }
 
@@ -1228,7 +1258,7 @@ kbd {
   width: 40px;
   height: 52px;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 /* ==========================================================================
@@ -1240,12 +1270,13 @@ kbd {
   position: fixed;
   top: 80px;
   right: 20px;
-  background: #111111;
-  color: #fdfbf7;
+  background: #000000;
+  color: #ffffff;
   padding: 0.75rem 1.25rem;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xs);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   z-index: 2000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .atelier-banner.active {
@@ -1308,15 +1339,15 @@ kbd {
     margin: 0;
   }
   .logo-text {
-    font-size: 1.7rem;
+    font-size: 1.45rem;
   }
   .nav-actions-right {
     margin-left: auto;
     gap: 0.75rem;
   }
   .nav-bag-btn {
-    padding: 7px 11px;
-    font-size: 0.78rem;
+    padding: 7px 12px;
+    font-size: 0.75rem;
   }
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1340,8 +1371,8 @@ kbd {
 
 @media (max-width: 600px) {
   .logo-text {
-    font-size: 1.55rem;
-    letter-spacing: 0.08em;
+    font-size: 1.35rem;
+    letter-spacing: 0.16em;
   }
   .nav-actions-right {
     gap: 0.45rem;
@@ -1351,7 +1382,7 @@ kbd {
   }
   .nav-bag-btn {
     padding: 6px 9px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     gap: 0.3rem;
   }
   .hero-section {
