@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOOM — Wear What Feels Like You</title>
+  <meta name="description" content="Loom crafts curated everyday essentials designed for quiet confidence. Breathable linen, heavyweight organic cotton, and relaxed silhouettes.">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LOOM — Wear What Feels Like You">
+  <meta property="og:description" content="Curated everyday essentials designed for quiet confidence. Explore Collection 01.">
+
+  <!-- Typography: Cormorant Garamond (Editorial Serif) + Plus Jakarta Sans (Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22>L</text></svg>">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <span>Collection 01 — Limited Seasonal Release</span>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Left Navigation -->
+      <nav class="nav-links-left" aria-label="Primary Navigation">
+        <a href="#featured" class="nav-link">New Arrivals</a>
+        <a href="#featured" class="nav-link">Collection</a>
+        <a href="#lookbook" class="nav-link">Lookbook</a>
+        <a href="#standard" class="nav-link">Philosophy</a>
+      </nav>
+
+      <!-- Center Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="LOOM Homepage">
+        <span class="logo-text">LOOM</span>
+      </a>
+
+      <!-- Right Navigation Actions -->
+      <div class="nav-actions-right">
+        <!-- Theme Mode Toggle -->
+        <button id="theme-toggle-btn" class="nav-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="search-trigger-btn" class="nav-btn" aria-label="Search Collection" title="Search Collection">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button id="cart-toggle-btn" class="nav-bag-btn" aria-label="View Shopping Bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="bag-label">Bag</span>
+          <span id="bag-count-badge" class="bag-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <a href="#featured" class="mobile-nav-link">New Arrivals</a>
+        <a href="#featured" class="mobile-nav-link">Collection</a>
+        <a href="#lookbook" class="mobile-nav-link">Lookbook</a>
+        <a href="#standard" class="mobile-nav-link">Philosophy</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <button id="mobile-bag-trigger" class="mobile-bag-btn">Open Bag (<span id="mobile-bag-num">0</span>)</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Content Column -->
+        <div class="hero-content">
+          <span class="hero-eyebrow">COLLECTION 01</span>
+          
+          <h1 class="hero-title">
+            Wear what feels <br>
+            <em>like you.</em>
+          </h1>
+
+          <p class="hero-description">
+            Curated essentials designed for everyday confidence. 
+            Relaxed silhouettes cut from breathable linen and organic cotton.
+          </p>
+
+          <div class="hero-action">
+            <a href="#featured" class="hero-cta-btn">
+              <span>Explore Collection</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>Natural Fibers</span>
+            <span class="meta-dot">·</span>
+            <span>Relaxed Tailoring</span>
+            <span class="meta-dot">·</span>
+            <span>Small Batches</span>
+          </div>
+        </div>
+
+        <!-- Editorial Image Column -->
+        <div class="hero-media">
+          <div class="hero-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85" 
+              alt="Loom Collection 01 - Relaxed Linen Silhouette"
+              class="hero-img"
+              loading="eager"
+            >
+            <div class="hero-image-tag">
+              <span class="tag-title">Oversized Linen Shirt in Chalk White</span>
+              <span class="tag-price">₹2,499</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FEATURED COLLECTION (THE EVERYDAY WARDROBE) -->
+    <section id="featured" class="featured-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">CURATED PIECES</span>
+            <h2 class="section-title">The Everyday Wardrobe</h2>
+          </div>
+
+          <div class="category-filter-group" role="tablist" aria-label="Filter collection">
+            <button class="filter-tab active" data-category="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-tab" data-category="linen" role="tab" aria-selected="false">Linen</button>
+            <button class="filter-tab" data-category="cotton" role="tab" aria-selected="false">Cotton</button>
+            <button class="filter-tab" data-category="outerwear" role="tab" aria-selected="false">Outerwear</button>
+          </div>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="products-grid" id="products-grid">
+          <!-- Populated by app.js with interactive color switching and hover image reveal -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE LOOM EDIT (EDITORIAL LOOKBOOK) -->
+    <section id="lookbook" class="lookbook-section">
+      <div class="container">
+        <div class="lookbook-header">
+          <span class="section-tag">EDITORIAL</span>
+          <h2 class="section-title">The Loom Edit</h2>
+          <p class="section-desc">Garments built for ease, movement, and unstructured days.</p>
+        </div>
+
+        <div class="lookbook-grid">
+          <!-- Look 01 -->
+          <div class="lookbook-item large">
+            <div class="lookbook-img-frame">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85" alt="Look 01 - The Unstructured Linen Silhouette" loading="lazy">
+              <div class="lookbook-meta-overlay">
+                <span class="look-badge">LOOK 01</span>
+                <h3 class="look-title">The Unstructured Silhouette</h3>
+                <p class="look-subtitle">Chalk Linen Shirt &amp; Relaxed Trousers</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 02 -->
+          <div class="lookbook-item">
+            <div class="lookbook-img-frame">
+              <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=85" alt="Look 02 - Heavyweight Loopback Structure" loading="lazy">
+              <div class="lookbook-meta-overlay">
+                <span class="look-badge">LOOK 02</span>
+                <h3 class="look-title">Heavyweight Structure</h3>
+                <p class="look-subtitle">Boxy Jersey Tee in Oatmeal</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 03 -->
+          <div class="lookbook-item">
+            <div class="lookbook-img-frame">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85" alt="Look 03 - Raw Cotton Layering" loading="lazy">
+              <div class="lookbook-meta-overlay">
+                <span class="look-badge">LOOK 03</span>
+                <h3 class="look-title">Considered Layering</h3>
+                <p class="look-subtitle">Minimal Chore Jacket in Natural Ecru</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. THE LOOM STANDARD (PHILOSOPHY) -->
+    <section id="standard" class="standard-section">
+      <div class="container">
+        <div class="standard-header">
+          <span class="section-tag">PHILOSOPHY</span>
+          <h2 class="section-title">The Loom Standard</h2>
+        </div>
+
+        <div class="standard-grid">
+          <div class="standard-card">
+            <span class="standard-num">01</span>
+            <h3 class="standard-title">Natural Materials</h3>
+            <p class="standard-text">
+              Lightweight breathable linen and heavyweight cotton selected for daily comfort, texture, and how they soften with every wear.
+            </p>
+          </div>
+
+          <div class="standard-card">
+            <span class="standard-num">02</span>
+            <h3 class="standard-title">Considered Construction</h3>
+            <p class="standard-text">
+              Relaxed silhouettes, flat-felled internal seams, and natural corozo nut buttons designed for longevity without unnecessary detail.
+            </p>
+          </div>
+
+          <div class="standard-card">
+            <span class="standard-num">03</span>
+            <h3 class="standard-title">Less, Better</h3>
+            <p class="standard-text">
+              Small seasonal releases focused on modular pieces that work effortlessly together season after season.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FINAL CALL TO ACTION -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <span class="cta-tag">SEASONAL RELEASE</span>
+          <h2 class="cta-title">Find your next favorite piece.</h2>
+          <p class="cta-text">
+            Complimentary shipping on orders above ₹2,000. Made in limited runs.
+          </p>
+          <a href="#featured" class="cta-btn">
+            <span>Explore Collection</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">LOOM</span>
+        <p class="footer-desc">Curated essentials designed for everyday confidence.</p>
+        <span class="footer-copy">&copy; 2026 LOOM ATELIER</span>
+      </div>
+
+      <div class="footer-links">
+        <span class="footer-col-title">Collection</span>
+        <a href="#featured">New Arrivals</a>
+        <a href="#featured">Linen Essentials</a>
+        <a href="#featured">Organic Cotton</a>
+        <a href="#featured">Chore Jackets</a>
+      </div>
+
+      <div class="footer-links">
+        <span class="footer-col-title">About</span>
+        <a href="#standard">The Loom Standard</a>
+        <a href="#lookbook">Editorial Lookbook</a>
+        <a href="DECISIONS.md">DECISIONS.md</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SLIDE-OVER SHOPPING BAG DRAWER (FOCUSED DEMO INTERACTION) -->
+  <div id="cart-drawer-backdrop" class="cart-backdrop" aria-hidden="true">
+    <div class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Bag">
+      <div class="cart-header">
+        <div class="cart-title-group">
+          <span class="cart-heading">Your Bag</span>
+          <span id="cart-item-count-text" class="cart-subcount">(0 items)</span>
+        </div>
+        <button id="cart-close-btn" class="cart-close-btn" aria-label="Close Bag">&times;</button>
+      </div>
+
+      <!-- Item List Container -->
+      <div id="cart-items-list" class="cart-items-list">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Cart Drawer Footer -->
+      <div class="cart-footer">
+        <div class="cart-summary-row">
+          <span>Subtotal</span>
+          <strong id="cart-subtotal-val">₹0</strong>
+        </div>
+        <div class="cart-summary-row">
+          <span>Delivery</span>
+          <span>Complimentary</span>
+        </div>
+        <div class="cart-summary-row total">
+          <span>Total</span>
+          <strong id="cart-total-val">₹0</strong>
+        </div>
+
+        <button id="checkout-demo-btn" class="checkout-btn">
+          <span>Checkout</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH MODAL (/) -->
+  <div id="search-modal" class="search-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Search Collection">
+    <div class="search-box">
+      <div class="search-bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" placeholder="Search linen, cotton, jackets, shirts..." autocomplete="off">
+        <kbd id="search-close-kbd">ESC</kbd>
+      </div>
+      <div id="search-results-list" class="search-results-list">
+        <!-- Dynamically rendered -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBTLE ATELIER EASTER EGG BANNER -->
+  <div id="atelier-banner" class="atelier-banner" aria-hidden="true">
+    <div class="atelier-banner-content">
+      <span class="atelier-sparkle">✦</span>
+      <span>Atelier mode unlocked.</span>
+      <button id="atelier-dismiss-btn" class="atelier-close" aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
